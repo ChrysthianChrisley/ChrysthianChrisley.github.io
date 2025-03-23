@@ -1,32 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anotações do Mestrado</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h1>Anotações do Mestrado</h1>
+        <header>
+            <h1>Anotações do Mestrado</h1>
+            <p>Organização das disciplinas e prazos importantes</p>
+        </header>
 
-        <div class="avisos">
+        <div class="card avisos">
             <h2>Avisos - <span id="dataHora"></span></h2>
-            <p><strong>Estatística - 25/03:</strong> Aula 2 – Introdução à Estatística Descritiva – Aula Assíncrona.</p>
-            <p><strong>Inglês - Até 01/04:</strong> Writing Activity - Tell me in a few lines about your Master research.</p>
-            <p><strong>Metodologia Científica - Até 06/04:</strong> Fórum Metodologia Tópico 1 - valor 0,5</p>
-            <p><strong>Machine Learning:</strong> <a href="https://docs.google.com/spreadsheets/d/1ttyd-BWs8bwGUL_mlIilnIx2Z0Xt4gmIaQ2QhLQ7xSY/edit?gid=0#gid=0" target="_blank"> Planilha com os grupos de alunos para os trabalhos.</a></p>
+            <div class="aviso-item">
+                <p><span class="date-badge">25/03</span><strong>Estatística:</strong> Aula 2 – Introdução à Estatística Descritiva – Aula Assíncrona.</p>
+            </div>
+            <div class="aviso-item">
+                <p><span class="date-badge">01/04</span><strong>Inglês:</strong> Writing Activity - Tell me in a few lines about your Master research.</p>
+            </div>
+            <div class="aviso-item">
+                <p><span class="date-badge">06/04</span><strong>Metodologia Científica:</strong> Fórum Metodologia Tópico 1 - valor 0,5</p>
+            </div>
+            <div class="aviso-item">
+                <p><strong>Machine Learning:</strong> <a href="https://docs.google.com/spreadsheets/d/1ttyd-BWs8bwGUL_mlIilnIx2Z0Xt4gmIaQ2QhLQ7xSY/edit?gid=0#gid=0" target="_blank">Planilha com os grupos de alunos para os trabalhos</a></p>
+            </div>
         </div>
 
         <h2>Disciplinas</h2>
-        <ul>
-            <li><a href="estatistica.html">2025.1 - Estatística</a></li>
-            <li><a href="ingles.html">2025.1 - Inglês</a></li>
-            <li><a href="machinelearning.html">2025.1 - Machine Learning I</a></li>
-            <li><a href="metodologia.html">2025.1 - Metodologia Científica</a></li>
-        </ul>
+        <div class="grid">
+            <div class="card disciplina-card">
+                <h3>Estatística</h3>
+                <p>Fundamentos de estatística e análise de dados com R</p>
+                <a href="estatistica.html" class="btn">Acessar</a>
+            </div>
+            
+            <div class="card disciplina-card">
+                <h3>Inglês</h3>
+                <p>Desenvolvimento de habilidades acadêmicas em inglês</p>
+                <a href="ingles.html" class="btn">Acessar</a>
+            </div>
+            
+            <div class="card disciplina-card">
+                <h3>Machine Learning I</h3>
+                <p>Conceitos e aplicações de aprendizado de máquina</p>
+                <a href="machinelearning.html" class="btn">Acessar</a>
+            </div>
+            
+            <div class="card disciplina-card">
+                <h3>Metodologia Científica</h3>
+                <p>Fundamentos da pesquisa acadêmica e metodologia</p>
+                <a href="metodologia.html" class="btn">Acessar</a>
+            </div>
+        </div>
     </div>
 
     <footer>
-        <p>©</p>
+        <p>&copy; 2025 - Anotações do Mestrado</p>
     </footer>
 
     <script src="script.js"></script>
